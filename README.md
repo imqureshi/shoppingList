@@ -52,7 +52,7 @@ This section explains the design decision that were made while building the appl
 
 I am using faker to generate data with the schema for both users and shopping lists
 
-### Auth:
+## Auth:
 
 1. For authentication model I have added the following fields.
    - email: string,
@@ -63,7 +63,7 @@ I am using faker to generate data with the schema for both users and shopping li
 3. I am using a post hook to save customer Ids
 4. I am storing JWT and Refresh token in cookies
 
-### Shopping List:
+## Shopping List:
 
 1. All the apis of shopping lists are authenticated by a auth middleware
 2. I am using an admin guard for the get api as its accessing the data of all the users
@@ -80,7 +80,7 @@ I am using faker to generate data with the schema for both users and shopping li
 5. schema is build in such a way that we can share list with multiple users
 6. A list cant be shared with the user itself and one cant be added multiple times
 
-### gaps identified.
+## gaps identified.
 
 1. Some missing custom interfaces
 2. Some apis are missing regarding crud that can be extended
