@@ -43,3 +43,44 @@ Shopping:
 10. share with the same user again
 11. try to access this route without root permissions
     10.get list
+
+## design decisions
+
+This section explains the design decision that were made while building the application
+
+## Seeding Data:
+
+I am using faker to generate data with the schema for both users and shopping lists
+
+### Auth:
+
+1. For authentication model I have added the following fields.
+   - email: string,
+   - password: string,
+   - confirmed: boolean,
+   - role: string,
+2. I am using bcrypt for hashing and its done as a pre mongo hook while saving user
+3. I am using a post hook to save customer Ids
+4. I am storing JWT and Refresh token in cookies
+
+### Shopping List:
+
+1. All the apis of shopping lists are authenticated by a auth middleware
+2. I am using an admin guard for the get api as its accessing the data of all the users
+3. For Shopping list model I have added the following fields.
+   createdBy: string,
+   items: string[],
+   sharedWith: [
+   {
+   user: string,
+   permission: enum: ["read", "write", "all"],
+   },
+   ],
+4. For sharing user I have added validations so I can only edit my list to share them
+5. schema is build in such a way that we can share list with multiple users
+6. A list cant be shared with the user itself and one cant be added multiple times
+
+### gaps identified.
+
+1. Some missing custom interfaces
+2. Some apis are missing regarding crud that can be extended
