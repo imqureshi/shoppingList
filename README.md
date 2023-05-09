@@ -19,8 +19,8 @@ Auth:
 1. GET /signIn: Retrieve a list of all shopping lists.
 
 Shopping:
-1. PUT /shoppingList/sharedLists/:userId: Create a new shopping list.
-2. GET /shoppingList/:id: Retrieve a specific shopping list.
+1. PUT /shoppingList/sharedLists/:userId: share a list with user.
+2. GET /shoppingList/:userId: Retrieve a specific shopping list.
 Tests
 This project provides a test suite that can be run using npm run test. The tests cover the following scenarios:
 
