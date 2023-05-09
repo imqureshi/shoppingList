@@ -80,7 +80,7 @@ I am using faker to generate data with the schema for both users and shopping li
 5. schema is build in such a way that we can share list with multiple users
 6. A list cant be shared with the user itself and one cant be added multiple times
 
-## gaps identified.
+## Gaps identified.
 
 1. Some missing custom interfaces
 2. Some apis are missing regarding crud that can be extended
