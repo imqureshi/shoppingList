@@ -1,0 +1,37 @@
+version: '3.7'
+
+services:
+  app:
+    image: app-ms
+    container_name: app-ms
+    networks:
+      - noname
+    ports:
+      - "3000:3000"
+    build:
+      context: ./src
+    depends_on:
+      - db
+    restart: always
+  db:
+    image: mongo
+    container_name: mongo-db
+    restart: always
+    ports:
+      - "2716:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - noname
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: user123
+      MONGO_INITDB_ROOT_PASSWORD: passStrong2345
+      MONGO_INITDB_DATABASE: noname
+    command: mongod --auth
+
+networks:
+  noname:
+    driver: bridge
+volumes:
+  mongo-data:
+    driver: local

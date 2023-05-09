@@ -1,0 +1,32 @@
+[
+  {
+    "email": "Sienna5@hotmail.com",
+    "password": "26hOl8cRNoF_wlq",
+    "confirmed": true,
+    "role": "admin"
+  },
+  {
+    "email": "Thea.Boyle95@hotmail.com",
+    "password": "5cfeKM1fxsQ3WbM",
+    "confirmed": true,
+    "role": "admin"
+  },
+  {
+    "email": "Macy.Schmeler91@gmail.com",
+    "password": "_iTPmBRp4o1EoaC",
+    "confirmed": true,
+    "role": "admin"
+  },
+  {
+    "email": "Taya.Kessler9@yahoo.com",
+    "password": "cQGmtWrKhi5R_ac",
+    "confirmed": true,
+    "role": "user"
+  },
+  {
+    "email": "Makenna_Bruen11@gmail.com",
+    "password": "yiSPFbLLMYpy7_I",
+    "confirmed": true,
+    "role": "admin"
+  }
+]
