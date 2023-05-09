@@ -44,7 +44,7 @@ Shopping:
 11. try to access this route without root permissions
     10.get list
 
-## design decisions
+# Design decisions
 
 This section explains the design decision that were made while building the application
 
