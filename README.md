@@ -8,11 +8,22 @@ To get started with this project, follow these steps:
 
 ## Clone this repository to your local machine.
 
-1. Build the Docker image using docker-compose build.
-2. Start the Docker container using docker-compose up -d.
-3. Run These commands to start tests
-   - cd ./src
-   - Run the tests using npm run test.
+1. Build the Docker image using 
+...
+docker-compose build.
+...
+3. Start the Docker container using 
+...
+docker-compose up -d
+...
+5. Run These commands to start tests
+   ...
+   cd ./src
+   ...
+   Run the tests using 
+   ...
+   npm run test
+   ...
 
 ## Dependencies
 
